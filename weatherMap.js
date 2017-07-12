@@ -60,8 +60,10 @@ function initialize() {
 	// Adds a marker to the map.
 	function addMarker(location, map) {
 		//var marker;
+		//1) removing all the existing marker
+		alert("hello to all");
 		removeMarkers();
-        
+        //2)creating a new marker and added to a particular postion on the map
             var marker = new google.maps.Marker({
                 position : location,
                 map : map
